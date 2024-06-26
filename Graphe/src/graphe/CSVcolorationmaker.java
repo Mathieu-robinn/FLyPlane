@@ -84,7 +84,7 @@ public class CSVcolorationmaker {
                             list = list4;
                         }
                         
-                        writer.append(fileName + ";" + list.getnbconflit()).append("\n");
+                        writer.append(fileName + " ; " + list.getnbconflit()).append("\n");
                         createTextFileWithFirstLine(path.toFile(), lineNumber);
                         lineNumber++; // Incrémenter le numéro de ligne
                     } catch (IOException e) {
@@ -109,7 +109,7 @@ public class CSVcolorationmaker {
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              FileWriter writer = new FileWriter(outputFileName)) {
             for (int i = 1; i <= list.taille(); i++) {
-                writer.write(list.getVolId(i).getid() + ";" + list.getVolId(i).getcouleur() + "\n");
+                writer.write(list.getVolId(i).getid() + "; " + list.getVolId(i).getcouleur() + "\n");
             }
         }
     }
@@ -122,6 +122,11 @@ public class CSVcolorationmaker {
     public static void main(String[] args) {
         String folderPath = "C:/Users/Robi6/OneDrive/Bureau/DataGraphTest";
         String csvFilePath = "C:/Users/Robi6/OneDrive/Bureau/results/result.csv";
+        
+       
+        
+        
+        
         
         CSVcolorationmaker(folderPath, csvFilePath);
         
