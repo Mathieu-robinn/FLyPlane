@@ -85,9 +85,9 @@ public class InterfaceIHMSAE extends JFrame {
     }
         
     public void constrPan(){
-    
+        
         GridBagConstraints gbc = new GridBagConstraints();
-
+        
         JMenuBar menuBar = new JMenuBar();
 
         // JMenu

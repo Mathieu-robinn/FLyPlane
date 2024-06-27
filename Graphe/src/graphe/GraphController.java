@@ -492,8 +492,8 @@ public class GraphController {
         int mincouleur = Integer.MAX_VALUE;
         
         //int nb = 40;
-        int nb = 20;
-        //int nb= 6;
+        //int nb = 20;
+        int nb= 1;
         for (int y = 0; y < nb; y++) {
             
             Collections.shuffle(list.getArraylist());
@@ -534,7 +534,7 @@ public class GraphController {
         int mincouleur = Integer.MAX_VALUE;
         int cpt = 0;
         //int nb = list.getArraylist().size() * 3;
-        int nb = list.getArraylist().size();
+        int nb = 1;
         //int nb = list.getArraylist().size() / 2;
         for (int y = 0; y < nb; y++) {
             cpt++;
@@ -579,11 +579,7 @@ public class GraphController {
         int mincouleur = Integer.MAX_VALUE;
         int cpt = 0;
         int nb;
-        if(list.getArraylist().size() > 500){
-            nb = 300 * 300;
-        }else{
-            nb = list.getArraylist().size() * list.getArraylist().size();
-        }
+        nb = 1;
         
         
         for (int y =0;y<nb ;y++){
@@ -624,12 +620,8 @@ public class GraphController {
         int minconflits = Integer.MAX_VALUE;
         ArrayList<Integer> best = list.getcouleurs();
         int mincouleur = Integer.MAX_VALUE;
-        int nb;
-        if(list.getArraylist().size() > 500){
-            nb = 300 * 300;
-        }else{
-            nb = list.getArraylist().size() * list.getArraylist().size();
-        }
+        int nb = 1;
+        
         for (int y =0;y<nb ;y++){
             list.setcouleurdefault();
             Collections.shuffle(list.getArraylist());

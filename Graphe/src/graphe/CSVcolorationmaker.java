@@ -120,8 +120,8 @@ public class CSVcolorationmaker {
      * @param args les arguments de la ligne de commande
      */
     public static void main(String[] args) {
-        String folderPath = "C:/Users/Robi6/OneDrive/Bureau/DataGraphTest";
-        String csvFilePath = "C:/Users/Robi6/OneDrive/Bureau/results/result.csv";
+        String folderPath = "C:/Users/Robi6/OneDrive/Bureau/DataTest";
+        String csvFilePath = "C:/Users/Robi6/OneDrive/Bureau/results/coloration-groupe1_7.csv";
         
        
         
